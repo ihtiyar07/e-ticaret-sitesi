@@ -1,0 +1,23 @@
+{
+  "name": "postgrescrud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "nodemon": "^2.0.15",
+    "tailwindcss": "^3.4.1"
+  }
+}

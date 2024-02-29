@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+
+<body class="font-sans bg-gray-100 flex">
+
+  <!-- Sol Taraftaki Kaydırma Çubuğu (Sidebar) -->
+  <nav class="bg-gray-800 text-white h-max p-20 h-screen w-1/5">
+    <div class="mb-4">
+      <h2 class="text-2xl font-semibold mb-2 block">Menü</h2>
+      <ul>
+        <li><button  class="block py-2 hover:text-gray-300 users">Kullanıcılar</button></li>
+        <li><button class="block py-2 hover:text-gray-300 products">Ürünler</button></li>
+        <li><button class="block py-2 hover:bg-slate-200">Siparişler</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Orta Kısım -->
+  <div class="flex-1 p-8">
+
+
+    <div class="overflow-y-hidden rounded-lg border" id="items-center">
+  </div>
+  
+
+
+  </div>
+<script src="admin.js"></script>
+</body>
+
+
+<!-- <body class="font-sans bg-gray-100 flex flex-col items-center justify-center h-screen">
+
+  <div class="relative inline-block text-left">
+      <div>
+          <button type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" id="qualificationButton" aria-haspopup="true" aria-expanded="true">
+              QUALIFICATION
+          </button>
+      </div>
+
+      <div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden" id="qualificationDropdown">
+          <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="qualificationButton">
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem" data-value="Admin">Admin</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem" data-value="Edit">Edit</a>
+              <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role="menuitem" data-value="Customer">Customer</a>
+          </div>
+      </div>
+  </div>
+
+  <div id="selectedValue" class="mt-4 text-gray-700 font-semibold"></div>
+
+  <script>
+      const qualificationButton = document.getElementById('qualificationButton');
+      const qualificationDropdown = document.getElementById('qualificationDropdown');
+      const selectedValue = document.getElementById('selectedValue');
+
+      qualificationButton.addEventListener('click', () => {
+          qualificationDropdown.classList.toggle('hidden');
+      });
+
+      document.addEventListener('click', (event) => {
+          if (!qualificationButton.contains(event.target)) {
+              qualificationDropdown.classList.add('hidden');
+          }
+      });
+
+      qualificationDropdown.addEventListener('click', (event) => {
+          if (event.target.hasAttribute('data-value')) {
+              const selectedDataValue = event.target.getAttribute('data-value');
+              selectedValue.textContent = `Selected: ${selectedDataValue}`;
+              qualificationDropdown.classList.add('hidden');
+          }
+      });
+  </script> -->
+
+</html>

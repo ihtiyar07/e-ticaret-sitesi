@@ -1,0 +1,273 @@
+body{
+  margin: 0;
+  font-family: Arial, sans-serif ;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.topbar{
+  background-color: #3a3944;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 10px;
+}
+
+.information{
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+
+.information > div span {
+  margin-right: 5px;
+
+}
+
+.location{
+  display: flex;
+  align-items: center;
+  
+}
+.call{
+  display: flex;
+  align-items: center;
+
+
+}
+
+
+.currency-selector{
+  font-weight: bold;
+}
+
+nav {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 15px 0;
+}
+
+
+
+.logo{
+  font-size: 1.5rem;    
+}
+.logo img{
+  width: 200px;
+  border-radius: 12px
+}
+.basket{
+  .cart{
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 10px;
+
+  }
+  
+  border-radius: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #707074;
+  display: flex;
+}
+
+
+.categori{
+  border-radius: 10px;
+  align-items: center;
+  height: 50px;
+  display: flex;
+  background-color: #1403bd;
+  justify-content: flex-start;
+}
+.menu{
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+
+}
+
+.menu a{
+  text-decoration: none;
+  margin-right: 10px;
+  color: #fff;
+  margin: 0 15px;
+} 
+
+
+
+
+
+.search input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance:none;
+  
+}
+
+
+#slider{
+  margin-top: 20px;
+  border-radius: 10px;
+  position: relative;
+  height: 30rem;
+  overflow: hidden;
+  box-shadow: 0 0 30 rgba(0 ,0, 0,0.3);
+  }
+
+#slider ul{
+  position: relative;
+  list-style: none;
+
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
+}
+
+#slider ul li{
+  position: relative;
+  height: 100%;
+  min-width: 100%;
+}
+
+#slider ul li img{
+  height: 100%;
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.recomender{
+  
+
+  width: 100%;
+  padding-top: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+
+  gap: 20px;
+}
+
+.card{
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+
+}
+
+.product-img {
+  width: 80%;
+  object-fit: cover;
+
+}
+
+.product-name {
+  font-weight: 600;
+
+} 
+
+.product-price{
+  font-size: 16px;
+  color: green;
+}
+
+
+
+
+
+
+.juice {
+  background-image: url('https://i.ibb.co/SN2Sp4T/juice.png');
+}
+
+.juice2 {
+background-image: url('https://i.ibb.co/yyMXMSF/juice2.png');
+}
+
+.juice3 {
+z-index: 10;
+position: relative;
+}
+
+.juice3::after {
+content: '';
+position: absolute;
+opacity: .2;
+z-index: -999;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-image: url('https://previews.123rf.com/images/olgasiv/olgasiv1403/olgasiv140300026/27343111-image-en-noir-sur-un-fond-blanc-dessin-de-l%C3%A9gumes-de-fruits-et-de-baies-.jpg');
+}
+
+.text-primary {
+  color: #f9b529;
+}
+
+.text-primary-lite {
+  color: #fac251;
+}
+
+.text-secondary {
+  color: #294356;
+}
+
+.text-secondary-lite {
+  color: #d5dee5;
+}
+
+.bg-primary {
+  background-color: #f9b529;
+}
+
+.bg-primary-lite {
+  background-color: #fac251;
+}
+
+.bg-secondary {
+  background-color: #294356;
+}
+
+.bg-secondary-lite {
+  background-color: #d5dee5;
+}
+
+.product {
+background-image: url('https://i.ibb.co/L00dH6V/2021-11-07-14h07-51.png');
+}
+.product2 {
+background-image: url('https://i.ibb.co/1fZMKPh/2021-11-07-14h08-07.png');
+}
+.product3 {
+background-image: url('https://i.ibb.co/f9tpvV3/2021-11-07-14h08-32.png');
+}
+.product4 {
+background-image: url('https://i.ibb.co/42BsKQ2/2021-11-07-14h08-17.png');
+}
+
+
+
